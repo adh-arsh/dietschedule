@@ -1,0 +1,89 @@
+.week-planner-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.header-row {
+    display: flex;
+    font-weight: bold;
+    background-color: #4a90e2; 
+    color: white; 
+    border-radius: 10px 10px 0 0; 
+}
+
+.header-cell {
+    border: 1px solid #ccc; 
+    padding: 10px;
+    flex: 1; 
+    text-align: center;
+}
+
+.day-row {
+    display: flex;
+}
+
+.day-cell {
+    flex: 1; 
+    border: 1px solid #ccc; 
+}
+
+.dish-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 70vh; 
+    border-radius: 10px; 
+    padding: 10px;
+    margin: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.dish-column:nth-child(odd) {
+    background-color: #e3f2fd; 
+}
+
+.dish-column:nth-child(even) {
+    background-color: #ffffff; 
+}
+
+.empty-cell {
+    color: #888;
+    text-align: center;
+    padding: 20px; 
+}
+
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50; 
+    color: white;
+    border: none;
+    border-radius: 50%; 
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 100; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.fab:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+.dish-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+.dish-name {
+    text-align: center; 
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333; 
+}

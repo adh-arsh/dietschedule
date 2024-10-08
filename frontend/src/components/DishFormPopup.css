@@ -1,0 +1,94 @@
+.dish-form-popup__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    transition: opacity 0.3s ease; 
+}
+
+.dish-form-popup__container {
+    background: #ffffff; 
+    padding: 30px; 
+    border-radius: 12px; 
+    width: 460px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    animation: slide-in 0.3s ease; 
+}
+
+.dish-form-popup__header {
+    margin-top: 0;
+    font-size: 1.5rem; 
+    color: #333; 
+}
+
+.dish-form-popup__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-form-popup__label {
+    margin-bottom: 12px;
+    font-weight: 600; 
+    color: #555; 
+}
+
+.dish-form-popup__input,
+.dish-form-popup__file,
+.dish-form-popup__select {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    transition: border-color 0.2s; 
+}
+
+.dish-form-popup__input:focus,
+.dish-form-popup__select:focus {
+    border-color: #007bff; 
+    outline: none; 
+}
+
+.dish-form-popup__button {
+    padding: 10px 15px; 
+    margin-top: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    color: white; 
+    background-color: #007bff; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.dish-form-popup__button:hover {
+    background-color: #0056b3; 
+}
+
+.dish-form-popup__cancel-button {
+    background-color: red !important;
+}
+
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.dish-form-popup__image-preview {
+    margin-top: 10px;
+    max-width: 100%; 
+    border-radius: 5px; 
+}
